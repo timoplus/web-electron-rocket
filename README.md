@@ -3,7 +3,7 @@
 This project was generated with [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket/)
 version 7.1.0
 
-# Getting started
+## Getting started
 
 ```
 >ngx new
@@ -62,6 +62,22 @@ npm ERR! Failed at the electron@5.0.11 postinstall script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 ```
 
+After running this command:
+
+```
+npm install electron --save-dev
+```
+
+Both package and run work now:
+
+```
+npm run electron:build	Build desktop app
+npm run electron:run	Run app on electron
+npm run electron:package	Package app for all supported platforms
+```
+
+## Old readme
+
 1. Go to project folder and install dependencies:
 
 ```sh
@@ -74,7 +90,7 @@ npm install
 npm start
 ```
 
-# Project structure
+## Project structure
 
 ```
 dist/                        web app production build
@@ -101,7 +117,7 @@ reports/                     test and coverage reports
 proxy.conf.js                backend proxy configuration
 ```
 
-# Main tasks
+## Main tasks
 
 Task automation is based on [NPM scripts](https://docs.npmjs.com/misc/scripts).
 
@@ -127,13 +143,13 @@ When building the application, you can specify the target configuration using th
 
 The default build configuration is `prod`.
 
-## Development server
+### Development server
 
 Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change
 any of the source files.
 You should not use `ng serve` directly, as it does not use the backend proxy configuration by default.
 
-## Code scaffolding
+### Code scaffolding
 
 Run `npm run generate -- component <name>` to generate a new component. You can also use
 `npm run generate -- directive|pipe|service|class|module`.
@@ -141,12 +157,12 @@ Run `npm run generate -- component <name>` to generate a new component. You can 
 If you have installed [angular-cli](https://github.com/angular/angular-cli) globally with `npm install -g @angular/cli`,
 you can also use the command `ng generate` directly.
 
-## Additional tools
+### Additional tools
 
 Tasks are mostly based on the `angular-cli` tool. Use `ng help` to get more help or go check out the
 [Angular-CLI README](https://github.com/angular/angular-cli).
 
-## Code formatting
+### Code formatting
 
 All `.ts`, `.js` & `.scss` files in this project are formatted automatically using [Prettier](https://prettier.io),
 and enforced via the `test:ci` script.
@@ -156,7 +172,7 @@ A pre-commit git hook has been configured on this project to automatically forma
 
 You can also force code formatting by running the command `npm run prettier`.
 
-# What's in the box
+## What's in the box
 
 The app template is based on [HTML5](http://whatwg.org/html), [TypeScript](http://www.typescriptlang.org) and
 [Sass](http://sass-lang.com). The translation files use the common [JSON](http://www.json.org) format.
