@@ -1,4 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+tims_host.pfx
+dist.packages/nimrod-win32-x64/pre-appx/
+nimrod-win32-x64/
 
 # Compiled output
 /dist
